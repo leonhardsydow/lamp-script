@@ -24,7 +24,7 @@ pixels = Adafruit_WS2801.WS2801Pixels(PIXEL_COUNT, spi=SPI.SpiDev(SPI_PORT, SPI_
 
 def set_rgb_color(pxels, r=255, g=255, b=255):
     # cast from string to int
-    r, g, b = int(float(r)), int(float(g)), int(float(b))
+    r, g, b = int(float(r)), int(float(g)), int(float(b))http://openhab:8080/basicui/app?sitemap=uicomponents_page_bd64addbdf
     pxels.set_pixels(Adafruit_WS2801.RGB_to_color(r, g, b))
     pxels.show()
 
